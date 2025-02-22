@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Mechatronics Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #eef2f3; overflow-x: hidden; }
+        header { background: linear-gradient(45deg, #007bff, #00d4ff); color: white; text-align: center; padding: 40px; font-size: 1.5em; opacity: 0; animation: fadeIn 1.5s ease-in-out forwards; }
+        section { max-width: 900px; margin: 20px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); opacity: 0; transform: translateY(20px); animation: slideUp 1s ease-in-out forwards; }
+        h1, h2 { text-align: center; color: #333; }
+        .projects img { width: 100%; border-radius: 8px; transition: transform 0.3s ease-in-out; }
+        .projects img:hover { transform: scale(1.05); }
+        .contact { text-align: center; font-size: 1.1em; }
+        .btn { display: inline-block; background: #007bff; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; transition: background 0.3s ease-in-out, transform 0.2s ease-in-out; }
+        .btn:hover { background: #0056b3; transform: scale(1.1); }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .animated:nth-child(1) { animation-delay: 0.2s; }
+        .animated:nth-child(2) { animation-delay: 0.4s; }
+        .animated:nth-child(3) { animation-delay: 0.6s; }
+        .animated:nth-child(4) { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Mechatronics Engineer | Robotics | Automation</p>
+    </header>
+    
+    <section class="animated">
+        <h2>About Me</h2>
+        <p>Hi! I'm a mechatronics engineering student passionate about robotics, automation, and IoT. I specialize in embedded systems, CAD design, and AI-driven automation.</p>
+    </section>
+    
+    <section class="projects animated">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div>
+                <h3>Autonomous Robotic Vehicle</h3>
+                <p>Built using ROS and LiDAR for industrial automation.</p>
+            </div>
+            <div>
+                <h3>Smart Home Automation</h3>
+                <p>Developed an IoT-based system using ESP8266 and MQTT.</p>
+            </div>
+            <div>
+                <h3>AI-Powered Predictive Maintenance</h3>
+                <p>Created an AI model to detect machine failures.</p>
+            </div>
+            <div>
+                <h3>3D Printed Robotic Arm</h3>
+                <p>Designed and programmed a robotic arm using Arduino.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="animated">
+        <h2>Blog</h2>
+        <p>Coming soon: My insights on robotics, AI, and automation.</p>
+    </section>
+    
+    <section class="contact animated">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+        <p>GitHub: <a href="#">Your GitHub</a></p>
+        <a href="#" class="btn">Download Resume</a>
+    </section>
+</body>
+</html>
